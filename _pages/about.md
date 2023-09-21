@@ -20,4 +20,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-This is my initial post.
+"We are all in the gutter, but some of us are looking at the stars."
