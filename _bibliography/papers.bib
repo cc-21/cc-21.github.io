@@ -1,84 +1,52 @@
----
----
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@article{10.1145/3742894,
+author = {Li, Ao and Huang, Madonna and Vikram, Vasudev and Lemieux, Caroline and Padhye, Rohan},
+title = {The Havoc Paradox in Generator-Based Fuzzing},
+year = {2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3742894},
+doi = {10.1145/3742894},
+abstract = {Parametric generators combine coverage-guided and generator-based fuzzing for testing programs requiring structured inputs. They function as decoders that transform arbitrary byte sequences into structured inputs, allowing mutations on byte sequences to map directly to mutations on structured inputs, without requiring specialized mutators. However, this technique is prone to the havoc effect, where small mutations on the byte sequence cause large, destructive mutations to the structured input. This paper investigates the paradoxical nature of the havoc effect for generator-based fuzzing in Java. In particular, we measure mutation characteristics and confirm the existence of the havoc effect, as well as scenarios where it may be more detrimental. Our evaluation across 7 real-world Java applications compares various techniques that perform context-aware, finer-grained mutations on parametric byte sequences, such as JQF-EI, BeDivFuzz, and Zeugma. We find that these techniques exhibit better control over input mutations and consistently reduce the havoc effect compared to our coverage-guided fuzzer baseline Zest. While we find that context-aware mutation approaches can achieve significantly higher code coverage, we see that destructive mutations still play a valuable role in discovering inputs that increase code coverage. Specialized mutation strategies, while effective, impose substantial computational overhead—revealing practical trade-offs in mitigating the havoc effect.},
+note = {Just Accepted},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = jun,
+keywords = {Generator-based Fuzzing, Mutation, Input Generator}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{10.1145/3678722.3685532,
+author = {Huang, Madonna and Lemieux, Caroline},
+title = {Directed or Undirected: Investigating Fuzzing Strategies in a CI/CD Setup (Registered Report)},
+year = {2024},
+isbn = {9798400711121},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3678722.3685532},
+doi = {10.1145/3678722.3685532},
+abstract = {Fuzzing best practices suggest that fuzzing should be run for at least 24 hours, if not longer. This recommendation makes it hard to integrate fuzzing into CI/CD contexts, to rapidly check a commit for bugs. Existing studies on CI/CD fuzzing simulated a CI/CD environment by running undirected fuzzers on Magma benchmark programs, which have multiple bugs injected into a single version of the program. Directed fuzzers, such as AFLGo, aim to generate inputs that reach specific target locations in the program being fuzzed. Thus, they should be more effective at fuzzing in a CI/CD environment. In this study, we propose to evaluate both directed and undirected fuzzers in a simulated CI/CD environment. Like prior work, we will use Magma as a source of benchmarks, and run fuzzers for 10 minutes. Unlike prior work, we will start the fuzzing process from a saturated corpus, rather than Magma's default corpus. Also unlike prior work, we will run the fuzzers on versions of Magma programs with a single bug injected. To deal with the threat that Magma patches give directed fuzzers access to too precise information as to the bug location, we will also conduct experiments where we add additional lines of target code, to evaluate the sensitivity of directed fuzzers. Our registered report gives preliminary results on a small subset of benchmarks.},
+booktitle = {Proceedings of the 3rd ACM International Fuzzing Workshop},
+pages = {33–41},
+numpages = {9},
+keywords = {continuous integration, directed fuzz testing, fuzz testing},
+location = {Vienna, Austria},
+series = {FUZZING 2024}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
-}
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@inproceedings{10.1145/3678722.3685529,
+author = {Li, Ao and Huang, Madonna and Lemieux, Caroline and Padhye, Rohan},
+title = {The Havoc Paradox in Generator-Based Fuzzing (Registered Report)},
+year = {2024},
+isbn = {9798400711121},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3678722.3685529},
+doi = {10.1145/3678722.3685529},
+abstract = {Parametric generators are a simple way to combine coverage-guided and generator-based fuzzing. Parametric generators can be thought of as decoders of an arbitrary byte sequence into a structured input. This allows mutations on the byte sequence to map to mutations on the structured input, without requiring the writing of specialized mutators. However, this technique is prone to the havoc effect, where small mutations on the byte sequence cause large, destructive mutations to the structured input. This registered report first provides a preliminary investigation of the paradoxical nature of the havoc effect for generator-based fuzzing in Java. In particular, we measure mutation characteristics and confirm the existence of the havoc effect, as well as scenarios where it may be more detrimental. The proposed evaluation extends this investigation over more benchmarks, with the tools Zest, JQF’s EI, BeDivFuzz, and Zeugma.},
+booktitle = {Proceedings of the 3rd ACM International Fuzzing Workshop},
+pages = {3–12},
+numpages = {10},
+keywords = {Generator-based Fuzzing, Input Generator, Mutation},
+location = {Vienna, Austria},
+series = {FUZZING 2024}
 }
